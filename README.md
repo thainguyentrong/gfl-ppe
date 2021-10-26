@@ -48,13 +48,10 @@ We use original data from the article [here](https://drive.google.com/drive/fold
 
 
     .
-    ├── build                   # Compiled files (alternatively `dist`)
-    ├── docs                    # Documentation files (alternatively `doc`)
-    ├── src                     # Source files (alternatively `lib` or `app`)
-    ├── test                    # Automated tests (alternatively `spec` or `tests`)
-    ├── tools                   # Tools and utilities
-    ├── LICENSE
-    └── README.md
+    ├── images
+             ├── image_from_china(1).jpg
+             ├── image_from_china(2).jpg
+    └── labels
 
 
   `images/`
