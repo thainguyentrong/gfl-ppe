@@ -40,6 +40,6 @@ Generalized Focal Loss (right) is inherited from original Focal Loss (left), how
 
 **Quality Focal Loss (QFL):** Merges classification score and IoU quality to be one `cls-iou` score. The target is dynamically updated online and it is in (0, 1]. For negative samples, the target is 0. So during training, not only the quality of the good predictions get trained with label 1, but the quality of all predicted boxes gets supervision.
 
-**Distributional Focal Loss (DFL):** Directly optimizes a distribution of bbox boundaries. the regression target is quantized into `n` (in this repository is 17) bins. The target is expressed as the integral over the distribution. The regression target is actually prepared in the same way as FCOS. In essence, instead of predicting 4 distances (from anchor point to 4 edges), now it predict `4xn`, classification instead of regression.
+**Distributional Focal Loss (DFL):** Directly optimizes a distribution of `bbox` boundaries. The regression target is quantized into `n` (in this repository is 17) bins. The target is expressed as the integral over the distribution. The regression target is actually prepared in the same way as FCOS. In essence, instead of predicting 4 distances (from anchor point to 4 edges of `bbox`), now it predict `4xn`, distribution classification instead of direct regression.
 
 **GIoU Loss** actually should work quite well
