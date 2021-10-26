@@ -33,4 +33,7 @@ We use an anchor-free object detection model with a network architecture similar
 <img src="resources/backbone.png" align="middle"/>
 
 ### Generalized Focal Loss
+
+Generalized Focal Loss (right) is inherited from original Focal Loss (left), however, the current form of Focal Loss only supports {1, 0} discrete labels, but the new labels contain decimals. Therefore, the article proposed to extend the two parts of Focal Loss for enabling the successful training under the case of joint representation:
+
 <img src="resources/gfl.png" align="middle"/>
