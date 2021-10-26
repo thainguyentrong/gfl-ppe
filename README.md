@@ -48,13 +48,13 @@ We use original data from the article [here](https://drive.google.com/drive/fold
 
     .
     ├── images
-    |         ├── image_from_china(1).jpg
-    |         ├── image_from_china(2).jpg
-    |         ├── ...
+    |     ├── image_from_china(1).jpg
+    |     ├── image_from_china(2).jpg
+    |     ├── ...
     └── labels
-              ├── image_from_china(1).txt
-              ├── image_from_china(2).txt
-              ├── ...
+          ├── image_from_china(1).txt
+          ├── image_from_china(2).txt
+          ├── ...
 
 Label format: `category x_min y_min x_max y_max`
 
