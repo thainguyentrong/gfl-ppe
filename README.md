@@ -79,3 +79,12 @@ Label format: `category x_min y_min x_max y_max`
 }
 ```
 
+```
+@article{Li2020GeneralizedFL,
+  title={Generalized Focal Loss: Learning Qualified and Distributed Bounding Boxes for Dense Object Detection},
+  author={Xiang Li and Wenhai Wang and Lijun Wu and Shuo Chen and Xiaolin Hu and Jun Li and Jinhui Tang and Jian Yang},
+  journal={ArXiv},
+  year={2020},
+  volume={abs/2006.04388}
+}
+```
