@@ -23,7 +23,9 @@ The article introduced Generalized Focal Loss improved from the original Focal L
 **Inflexible representation of bounding boxes:** The widely used bounding box representation can be viewed as Dirac delta distribution of the target box coordinates. In fact, the real distribution can be more arbitrary and flexible.
 
 The article proposed new representations for the bounding boxes and their localization quality:
-Merging the localization quality representation with the classification score into a single and unified representation: a classification vector where its value at the ground-truth category index refers to its corresponding localization quality (typically the IoU score between the predicted box and the corresponding ground-truth box).
+
+- Merging the localization quality representation with the classification score into a single and unified representation: a classification vector where its value at the ground-truth category index refers to its corresponding localization quality (typically the IoU score between the predicted box and the corresponding ground-truth box).
+- Representing the arbitrary distribution for bounding box representation by directly learning the discretized probability distribution over its continuous space.
 
 ### Backbone
 We use an anchor-free object detection model with a network architecture similar to FCOS:
