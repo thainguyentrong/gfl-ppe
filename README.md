@@ -68,7 +68,7 @@ Label format:
 
 
 
-$ tree
+$tree
 .
 ├── dir1
 │   ├── file11.ext
