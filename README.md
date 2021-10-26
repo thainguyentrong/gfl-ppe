@@ -47,22 +47,36 @@ Generalized Focal Loss (right) is inherited from original Focal Loss (left), how
 We use original data from the article [here](https://drive.google.com/drive/folders/19uUR6EJPQzMeK0YpsxRm51wMZzDmcsv6). Our dataset has the following format:
 
   `images/`
+  
           `image_from_china(1).jpg`
+ 
           `image_from_china(2).jpg`
+          
           ...
+          
   `labels/`
+  
           `image_from_china(1).txt`
+          
           `image_from_china(2).txt`
+          
           ...
 
 Label format:
 
    `worker 992 366 1040 511`
+   
    `worker 817 360 831 400`
+   
    `worker 860 366 879 386`
+   
    `hat 818 360 827 368`
+   
    `hat 871 366 878 373`
+   
    `hat 1000 366 1040 385`
+   
+   ...
 
 
 
