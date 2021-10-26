@@ -42,4 +42,4 @@ Generalized Focal Loss (right) is inherited from original Focal Loss (left), how
 
 **Distributional Focal Loss (DFL):** Directly optimizes a distribution of `bbox` boundaries. The regression target is quantized into `n` (in this repository is 17) bins. The target is expressed as the integral over the distribution. The regression target is actually prepared in the same way as FCOS. In essence, instead of predicting 4 distances (from anchor point to 4 edges of `bbox`), now it predicts `4xn`, distance distribution instead of direct regression.
 
-**GIoU Loss** actually should work quite well.
+
