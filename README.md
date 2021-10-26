@@ -38,9 +38,8 @@ Generalized Focal Loss (right) is inherited from original Focal Loss (left), how
 
 <img src="resources/gfl.png" align="middle"/>
 
-**Quality Focal Loss (QFL):** Merges classification score and IoU quality to be one `cls-iou` score.
-The target is dynamically updated online and it is in (0, 1]. For negative samples, the target is 0.
-So during training, not only the quality of the good predictions get trained with label 1, but the quality of all predicted boxes gets supervision.
-**Distributional Focal Loss (DFL):** Directly optimizes a distribution of bbox boundaries. the regression target is quantized into n (n=14) bins. The target is expressed as the integral over the distribution.
-The regression target is actually prepared in the same way as ATSS. In the above review post, and in Fig. 5(c), it is 0 to 16 in ATSS, 0 to 8 in FCOS. The delta is selected to 1 after ablation study. –> In essence, instead of predicting 4 numbers, now it predict 4 x 16 numbers, classification instead of regression.
-gIoU loss actually should work quite well. In order to further boosts the performance, 2 nearest bins from the target are selected from the n targets after a softmax layer is used to calculate the loss.
+**Quality Focal Loss (QFL):** Merges classification score and IoU quality to be one `cls-iou` score. The target is dynamically updated online and it is in (0, 1]. For negative samples, the target is 0. So during training, not only the quality of the good predictions get trained with label 1, but the quality of all predicted boxes gets supervision.
+
+**Distributional Focal Loss (DFL):** Directly optimizes a distribution of bbox boundaries. the regression target is quantized into `n` (in this repository is 17) bins. The target is expressed as the integral over the distribution. The regression target is actually prepared in the same way as FCOS. In essence, instead of predicting 4 distances (from anchor point to 4 edges), now it predict `4xn`, classification instead of regression.
+
+**GIoU Loss** actually should work quite well
