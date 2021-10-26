@@ -69,6 +69,13 @@ Label format: `category x_min y_min x_max y_max`
 ## Citation
 
 ```
-@article{Nath2020, author = {Nipun D. Nath and Amir H. Behzadan and Stephanie G. Paal}, title = {Deep Learning for Site Safety: Real-Time Detection of Personal Protective Equipment}, journal = {Automation in Construction}, volume = {112}, year = {2020}, pages = {103085}
+@article{Nath2020DeepLF,
+  title={Deep learning for site safety: Real-time detection of personal protective equipment},
+  author={Nipun D. Nath and Amir H. Behzadan and Stephanie German Paal},
+  journal={Automation in Construction},
+  year={2020},
+  volume={112},
+  pages={103085}
+}
 ```
 
