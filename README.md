@@ -18,4 +18,4 @@ This repository is implemented based-on the **Approach-1**, but instead of using
 ### Backbone
 We use an anchor-free object detection model with a network architecture similar to FCOS
 
-<img src="./gfl-ppe/resources/backbone.png" align="middle"/>
+<img src="resources/backbone.png" align="middle"/>
