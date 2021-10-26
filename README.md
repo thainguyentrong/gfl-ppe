@@ -66,3 +66,14 @@ Label format: `category x_min y_min x_max y_max`
 |   FCOS  | efficientnet-b0 | _ | _ |
 |    GFL  | efficientnet-b0 | 64.6 | 8.9M |
 
+## Citation
+
+@article{Nath2020DeepLF,
+  title={Deep learning for site safety: Real-time detection of personal protective equipment},
+  author={Nipun D. Nath and Amir H. Behzadan and Stephanie German Paal},
+  journal={Automation in Construction},
+  year={2020},
+  volume={112},
+  pages={103085}
+}
+
