@@ -52,28 +52,18 @@ We use original data from the article [here](https://drive.google.com/drive/fold
 -  ...
           
   `labels/`
-  
-          `image_from_china(1).txt`
-          
-          `image_from_china(2).txt`
-          
-          ...
+- `image_from_china(1).txt`
+- `image_from_china(2).txt`
+- ...
 
 Label format:
-
-   `worker 992 366 1040 511`
-   
-   `worker 817 360 831 400`
-   
-   `worker 860 366 879 386`
-   
-   `hat 818 360 827 368`
-   
-   `hat 871 366 878 373`
-   
-   `hat 1000 366 1040 385`
-   
-   ...
+- `worker 992 366 1040 511`
+- `worker 817 360 831 400`
+- `worker 860 366 879 386`
+- `hat 818 360 827 368`
+- `hat 871 366 878 373`
+- `hat 1000 366 1040 385`
+- ...
 
 
 
