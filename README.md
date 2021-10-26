@@ -60,7 +60,9 @@ Label format: `category x_min y_min x_max y_max`
 
 ## Results
 
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| Methods | Backbone | mAP@50 | #param |
+| ------- | -------- | ------ | ------ |
+|   YOLO  | efficientnet-b0 | _ | _ |
+|   FCOS  | efficientnet-b0 | _ | _ |
+|    GFL  | efficientnet-b0 | _ | _ |
+
