@@ -31,3 +31,6 @@ The article proposed new representations for the bounding boxes and their locali
 We use an anchor-free object detection model with a network architecture similar to FCOS:
 
 <img src="resources/backbone.png" align="middle"/>
+
+### Generalized Focal Loss
+<img src="resources/gfl.png" align="middle"/>
