@@ -15,7 +15,10 @@ According from [the paper](https://www.sciencedirect.com/science/article/abs/pii
 ## Our implementation
 This repository is implemented based-on the **Approach-1**, but instead of using YOLO model we use the end-to-end object detection method introduced in the article: [Generalized Focal Loss: Learning Qualified and Distributed Bounding Boxes for Dense Object Detection](https://arxiv.org/abs/2006.04388).
 
+### Overall impression
+The article introduced Generalized Focal Loss improved from the original Focal Loss
+
 ### Backbone
-We use an anchor-free object detection model with a network architecture similar to FCOS
+We use an anchor-free object detection model with a network architecture similar to FCOS:
 
 <img src="resources/backbone.png" align="middle"/>
