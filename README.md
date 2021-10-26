@@ -64,5 +64,5 @@ Label format: `category x_min y_min x_max y_max`
 | ------- | -------- | ------ | ------ |
 |   YOLO  | efficientnet-b0 | _ | _ |
 |   FCOS  | efficientnet-b0 | _ | _ |
-|    GFL  | efficientnet-b0 | _ | _ |
+|    GFL  | efficientnet-b0 | 64.6 | 8.9M |
 
