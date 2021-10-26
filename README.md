@@ -45,6 +45,7 @@ Generalized Focal Loss (right) is inherited from original Focal Loss (left), how
 ## Dataset
 
 We use original data from the article [here](https://drive.google.com/drive/folders/19uUR6EJPQzMeK0YpsxRm51wMZzDmcsv6). Our dataset has the following format:
+
     .
     ├── images
     |         ├── image_from_china(1).jpg
@@ -57,15 +58,3 @@ We use original data from the article [here](https://drive.google.com/drive/fold
 
 Label format: `category x_min y_min x_max y_max`
 
-
-
-
-
-    .
-    ├── build                   # Compiled files (alternatively `dist`)
-    ├── docs                    # Documentation files (alternatively `doc`)
-    ├── src                     # Source files (alternatively `lib` or `app`)
-    ├── test                    # Automated tests (alternatively `spec` or `tests`)
-    ├── tools                   # Tools and utilities
-    ├── LICENSE
-    └── README.md
