@@ -7,7 +7,7 @@ from dataset import PictorV3Dataset, Transformer, collate_source_fn, collate_val
 import config as cfg
 from model import Model
 from loss import Criterion
-from utils import unnormalize, Inference, GtTransform, Evaluation
+from utils import unnormalize, Inference, GtTransform, Evaluation, Intergral
 
 use_gpu = torch.cuda.is_available()
 
@@ -110,6 +110,7 @@ def train():
     inference = Inference()
     gttrans = GtTransform()
     eval = Evaluation()
+    intergral = Intergral()
 
     if use_gpu:
         model.cuda()
@@ -192,8 +193,9 @@ def train():
                     pred_cls_batch, pred_reg_batch = model(image)
                     pred_cls_batch = pred_cls_batch.sigmoid()
                     pred_reg_batch = pred_reg_batch.softmax(dim=2)
+                    pred_d_batch = intergral(pred_reg_batch)
 
-                    pred_clses_batch, pred_bboxes_batch, pred_quality_scores_batch = inference(pred_cls_batch, pred_reg_batch, threshold=0.5)
+                    pred_clses_batch, pred_bboxes_batch, pred_quality_scores_batch = inference(pred_cls_batch, pred_d_batch, threshold=0.5)
 
                     eval.append(gt_clses_batch, gt_bboxes_batch, pred_clses_batch, pred_bboxes_batch, pred_quality_scores_batch)
                 
