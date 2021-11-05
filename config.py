@@ -9,7 +9,7 @@ update = 1
 save = 1
 evaluate = 2
 
-fpn_strides = [8, 16, 32, 64, 128]
+fpn_strides = [8, 16, 32, 64, 128, 256, 512]
 reg_max = 17
 max_object_per_sample = 55
 

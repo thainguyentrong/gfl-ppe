@@ -205,8 +205,8 @@ class GtTransform(torch.nn.Module):
         self._fpn_strides = self._fpn_strides.to(gt_bboxes.device)
 
         gt_cen_bboxes = (gt_bboxes[:, :2] + gt_bboxes[:, 2:]) / 2 # (y, x) formula
-        g2a_dist = torch.cdist(gt_cen_bboxes, self._anchor_points_with_scales, p=2.0)
-        _, k_inds = torch.topk(g2a_dist, k=45, dim=1, largest=False)
+        g2a_dist = torch.cdist(gt_cen_bboxes, self._anchor_points_with_scales, p=2.0) / self._fpn_strides.unsqueeze(dim=0)
+        _, k_inds = torch.topk(g2a_dist, k=36, dim=1, largest=False)
 
         for gt_cls, gt_bbox, k_ind in zip(gt_clses, gt_bboxes, k_inds):
             k_anchors = self._anchor_boxes[k_ind, :] # (k, 4)
