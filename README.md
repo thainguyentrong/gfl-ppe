@@ -63,7 +63,7 @@ Label format: `category x_min y_min x_max y_max`
 | Methods | Backbone | mAP@50 | #param |
 | ------- | -------- | ------ | ------ |
 |   YOLO  | efficientnet-b0 | _ | _ |
-|   FCOS  | efficientnet-b0 | _ | _ |
+|   FCOS  | efficientnet-b0 | 42.8 | 8.3M |
 |    GFL  | efficientnet-b0 | 44.6 | 8.9M |
 
 ## Citation
